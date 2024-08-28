@@ -15,14 +15,16 @@ function App() {
     <>
       <Header />
       <Suspense fallback={null}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/catalog" element={<CatalogPage />} />
-          <Route path="/catalog/:id" element={<CamperPage />}>
-            <Route path="features" element={<Features />} />
-            <Route path="reviews" element={<Reviews />} />
-          </Route>
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/catalog" element={<CatalogPage />} />
+            <Route path="/catalog/:id" element={<CamperPage />}>
+              <Route path="features" element={<Features />} />
+              <Route path="reviews" element={<Reviews />} />
+            </Route>
+          </Routes>
+        </main>
       </Suspense>
     </>
   );

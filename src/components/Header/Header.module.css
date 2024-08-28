@@ -1,0 +1,20 @@
+.header {
+  padding: 24px 0;
+
+  background-color: #f7f7f7;
+  border-bottom: 1px solid;
+  border-color: #f2f4f7;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .headerContainer {
+    justify-content: start;
+    gap: 450px;
+  }
+}

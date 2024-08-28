@@ -40,5 +40,5 @@ const campersSlice = createSlice({
 
 export default campersSlice.reducer;
 
-export const selectItems = (state) => state.campers.items;
-export const selectItem = (state) => state.campers.selectItem;
+// export const selectItems = (state) => state.campers.items;
+// export const selectItem = (state) => state.campers.selectItem;

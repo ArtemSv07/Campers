@@ -47,6 +47,7 @@ const ButtonChange = (props) => {
       )}
     >
       <img src={props.path} alt={props.name} />
+
       <span>{props.name}</span>
     </button>
   );

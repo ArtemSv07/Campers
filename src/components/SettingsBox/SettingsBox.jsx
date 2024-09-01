@@ -11,11 +11,11 @@ import clsx from "clsx";
 import css from "./SettingsBox.module.css";
 
 const EQUIPMENT = [
-  { name: "AC", path: "../../icons/AC.svg" },
-  { name: "Automatic", path: "../../icons/transmission.svg" },
-  { name: "kitchen", path: "../../icons/kitchen.svg" },
-  { name: "TV", path: "../../icons/TV.svg" },
-  { name: "bathroom", path: "../../icons/bathroom.svg" },
+  { name: "AC", path: "../../icons/symbol-defs.svg#icon-AC" },
+  { name: "Automatic", path: "../../icons/symbol-defs.svg#icon-transmission" },
+  { name: "kitchen", path: "../../icons/symbol-defs.svg#icon-kitchen" },
+  { name: "TV", path: "../../icons/symbol-defs.svg#icon-TV" },
+  { name: "bathroom", path: "../../icons/symbol-defs.svg#icon-bathroom" },
 ];
 
 const TYPE = [

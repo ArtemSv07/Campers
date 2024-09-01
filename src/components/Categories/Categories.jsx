@@ -1,17 +1,38 @@
 import PropTypes from "prop-types";
 import css from "./Categories.module.css";
 
-const iconsPath = {
-  TV: "TV",
-  bathroom: "bathroom",
-  AC: "AC",
-  kitchen: "kitchen",
-  automatic: "transmission",
-  manual: "transmission",
-  radio: "radio",
-  diesel: "engine",
-  petrol: "engine",
-  hybrid: "engine",
+import TV from "../../icons/TV.svg";
+import Bathroom from "../../icons/bathroom.svg";
+import AC from "../../icons/AC.svg";
+import Kitchen from "../../icons/kitchen.svg";
+import Automatic from "../../icons/transmission.svg";
+import Manual from "../../icons/transmission.svg";
+import Radio from "../../icons/radio.svg";
+import Engine from "../../icons/engine.svg";
+
+const getIcon = (category) => {
+  switch (category) {
+    case "TV":
+      return TV;
+    case "bathroom":
+      return Bathroom;
+    case "AC":
+      return AC;
+    case "kitchen":
+      return Kitchen;
+    case "automatic":
+      return Automatic;
+    case "manual":
+      return Manual;
+    case "radio":
+      return Radio;
+    case "diesel":
+    case "petrol":
+    case "hybrid":
+      return Engine;
+    default:
+      return null;
+  }
 };
 
 const Categories = ({ categories }) => {
@@ -31,12 +52,7 @@ const Categories = ({ categories }) => {
       {allKeys.map((element, index) => (
         <li key={index}>
           <div className={css.box}>
-            <img
-              width={20}
-              height={20}
-              src={`/src/icons/${iconsPath[element]}.svg`}
-              alt=""
-            />
+            <img width={20} height={20} src={getIcon(element)} alt={element} />
             <p className="pMedium">
               {element.charAt(0).toUpperCase() + element.slice(1)}
             </p>
@@ -48,6 +64,7 @@ const Categories = ({ categories }) => {
 };
 
 Categories.propTypes = {
-  categories: PropTypes.object,
+  categories: PropTypes.object.isRequired,
 };
+
 export default Categories;

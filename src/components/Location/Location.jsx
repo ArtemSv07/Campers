@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import Map from "../../icons/mapBlack.svg";
 
 import css from "./Location.module.css";
 
@@ -7,7 +8,7 @@ const Location = ({ location }) => {
 
   return (
     <div className={css.box}>
-      <img className={css.map} src="/src/icons/mapBlack.svg" alt="map" />
+      <img className={css.map} src={Map} alt="map" />
       <p className={css.text}>{rearrangedLocation}</p>
     </div>
   );

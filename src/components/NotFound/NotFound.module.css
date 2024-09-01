@@ -1,0 +1,11 @@
+.bagroundImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/src/img/404.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

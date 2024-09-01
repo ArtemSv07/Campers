@@ -1,5 +1,7 @@
+import css from "./NotFound.module.css";
+
 const NotFound = () => {
-  return <div>Not Found</div>;
+  return <div className={css.bagroundImg}></div>;
 };
 
 export default NotFound;

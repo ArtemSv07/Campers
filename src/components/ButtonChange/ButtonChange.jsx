@@ -46,7 +46,11 @@ const ButtonChange = (props) => {
           css.onButton
       )}
     >
-      <img src={props.path} alt={props.name} />
+      {/* <img src={props.path} alt={props.name} /> */}
+
+      <svg width={20} height={20} className="icon">
+        <use href={`${props.path}`} />
+      </svg>
 
       <span>{props.name}</span>
     </button>

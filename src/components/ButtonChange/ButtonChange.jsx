@@ -6,6 +6,8 @@ import { useSelector } from "react-redux";
 import css from "./ButtonChange.module.css";
 import { selectloading } from "../../redux/selectorsCampers";
 
+import iconAc from "../../icons/AC.svg";
+
 const ButtonChange = (props) => {
   const [toggle, setToggle] = useState(false);
   const isLoading = useSelector(selectloading);
@@ -22,6 +24,7 @@ const ButtonChange = (props) => {
       setToggle(false);
     }
   }, [isLoading]);
+
   return (
     <button
       onClick={handleClick}
@@ -46,13 +49,9 @@ const ButtonChange = (props) => {
           css.onButton
       )}
     >
-      {/* <img src={props.path} alt={props.name} /> */}
+      <img src={iconAc} alt={props.name} />
 
-      <svg width={20} height={20} className="icon">
-        <use href={`${props.path}`} />
-      </svg>
-
-      <span>{props.name}</span>
+      <span>{props.name.charAt(0).toUpperCase() + props.name.slice(1)}</span>
     </button>
   );
 };

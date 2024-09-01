@@ -12,10 +12,10 @@ import css from "./SettingsBox.module.css";
 
 const EQUIPMENT = [
   { name: "AC", path: "/src/icons/AC.svg" },
-  { name: "Automatic", path: "/src/icons/symbol-defs.svg#icon-transmission" },
-  { name: "kitchen", path: "/src/icons/symbol-defs.svg#icon-kitchen" },
-  { name: "TV", path: "/src/icons/symbol-defs.svg#icon-TV" },
-  { name: "bathroom", path: "/src/icons/symbol-defs.svg#icon-bathroom" },
+  { name: "Automatic", path: "/src/icons/transmission.svg" },
+  { name: "kitchen", path: "/src/icons/kitchen.svg" },
+  { name: "TV", path: "/src/icons/TV.svg" },
+  { name: "bathroom", path: "/src/icons/bathroom.svg" },
 ];
 
 const TYPE = [

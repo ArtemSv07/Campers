@@ -6,7 +6,15 @@ import { useSelector } from "react-redux";
 import css from "./ButtonChange.module.css";
 import { selectloading } from "../../redux/selectorsCampers";
 
-import iconAc from "../../icons/AC.svg";
+import AC from "../../icons/AC.svg";
+import Automatic from "../../icons/transmission.svg";
+import Bathroom from "../../icons/bathroom.svg";
+import Kitchen from "../../icons/kitchen.svg";
+import TV from "../../icons/TV.svg";
+
+import Van from "../../icons/grid1.svg";
+import Full from "../../icons/grid2.svg";
+import Alcove from "../../icons/grid3.svg";
 
 const ButtonChange = (props) => {
   const [toggle, setToggle] = useState(false);
@@ -24,6 +32,29 @@ const ButtonChange = (props) => {
       setToggle(false);
     }
   }, [isLoading]);
+
+  const getIcon = (name) => {
+    switch (name) {
+      case "AC":
+        return AC;
+      case "Automatic":
+        return Automatic;
+      case "bathroom":
+        return Bathroom;
+      case "kitchen":
+        return Kitchen;
+      case "TV":
+        return TV;
+      case "Van":
+        return Van;
+      case "Fully Integrated":
+        return Full;
+      case "Alcove":
+        return Alcove;
+      default:
+        return null;
+    }
+  };
 
   return (
     <button
@@ -49,8 +80,7 @@ const ButtonChange = (props) => {
           css.onButton
       )}
     >
-      <img src={iconAc} alt={props.name} />
-
+      <img src={getIcon(props.name)} alt={props.name} />
       <span>{props.name.charAt(0).toUpperCase() + props.name.slice(1)}</span>
     </button>
   );

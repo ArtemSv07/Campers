@@ -1,0 +1,71 @@
+.div {
+  padding: 20px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--grayLight);
+}
+
+.h3 {
+  margin-bottom: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.textarea {
+  min-height: 118px;
+}
+
+.button {
+  margin: 24px auto 0;
+}
+
+.inputForm {
+  padding: 18px;
+  max-width: 614px;
+}
+.CustomDateField {
+  max-width: 614px;
+}
+
+.errMessage {
+  color: var(--buttonFover);
+  margin-top: 3px;
+  display: block;
+}
+
+@media screen and (min-width: 375px) {
+  .CustomDateField {
+    width: 311px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .div {
+    padding: 34px 44px;
+  }
+  .CustomDateField {
+    width: 614px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .div {
+    padding: 44px 57px;
+  }
+  .CustomDateField {
+    width: 870px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .div {
+    width: 641px;
+    border-radius: 10px;
+    border: 1px solid var(--grayLight);
+  }
+  .CustomDateField {
+    width: 525px;
+  }
+}

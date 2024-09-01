@@ -1,0 +1,46 @@
+.featureBox {
+  width: auto;
+  padding: 20px 15px;
+  background-color: var(--inputs);
+  border-radius: 10px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .featureBox {
+    padding: 34px 44px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .featureBox {
+    padding: 44px 52px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .featureBox {
+    width: 631px;
+
+    background-color: var(--inputs);
+    border-radius: 10px;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div {
+    flex-direction: row;
+    gap: 40px;
+  }
+}

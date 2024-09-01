@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 8px;
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    justify-content: space-between;
+  }
+}

@@ -23,7 +23,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
   margin: 0;
 }
 
@@ -31,6 +41,58 @@ h6 {
   width: 375px;
   padding: 0 16px;
   margin: 0 auto;
+  overflow-x: clip;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text);
+}
+
+.pMedium {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--main);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--main);
+}
+
+.inputLocal {
+  padding: 18px 18px 18px 46px;
+  border-radius: 12px;
+  border: transparent;
+  background-color: var(--inputs);
+  width: 100%;
+  outline: none;
+  border: none;
 }
 
 @media screen and (max-width: 375px) {
@@ -46,10 +108,11 @@ h6 {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .container {
     width: 1024px;
     padding: 0 32px;
+    gap: 20px;
   }
 }
 

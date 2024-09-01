@@ -1,0 +1,10 @@
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.map {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}

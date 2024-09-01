@@ -14,9 +14,9 @@
   font-weight: 500;
   line-height: 24px;
 
-  color: #101828;
+  color: var(--main);
 
   &.active {
-    color: #d84343;
+    color: var(--buttonFover);
   }
 }

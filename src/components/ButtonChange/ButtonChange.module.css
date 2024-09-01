@@ -1,0 +1,20 @@
+.button {
+  width: 112px;
+  height: 96px;
+  padding: 16px 18px;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: var(--button);
+}
+.onButton {
+  border-color: var(--button);
+}

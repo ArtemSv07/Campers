@@ -1,0 +1,48 @@
+.div {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.reviewBox {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.letterBox {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--badges);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--button);
+}
+
+.h4 {
+  margin-bottom: 4px;
+}
+.listStar {
+  display: flex;
+  gap: 4px;
+}
+
+.defaulStar {
+  color: var(--badges);
+}
+.goldStar {
+  color: var(--rating);
+}
+
+@media screen and (min-width: 1440px) {
+  .div {
+    flex-direction: row;
+    gap: 40px;
+  }
+}

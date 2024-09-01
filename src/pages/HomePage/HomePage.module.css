@@ -34,29 +34,8 @@
 }
 
 .button {
-  width: 173px;
-  height: 56px;
-  padding: 16px 60px 16px 60px;
-  gap: 4px;
-  border-radius: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
+  padding: 16px 45px;
   margin-top: 40px;
-  color: var(--white);
-  background-color: var(--button);
-  cursor: pointer;
-
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.005em;
-  transition: background-color 350ms linear;
-}
-
-.button:hover {
-  background-color: var(--buttonFover);
 }
 
 @media screen and (max-width: 1023px) {
@@ -96,9 +75,6 @@
 }
 
 @media screen and (min-width: 1800px) {
-  /* .imageOverlay {
-    background-position: center;
-  } */
   .homeSection {
     width: 1440px;
     margin: 0 auto;

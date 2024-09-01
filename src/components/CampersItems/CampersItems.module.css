@@ -1,0 +1,45 @@
+.div {
+  width: auto;
+}
+
+@media screen and (max-width: 375px) {
+  .div {
+    min-width: 288px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .div {
+    min-width: 343px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .div {
+    min-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .div {
+    width: 888px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid var(--grayLight);
+  margin: 40px auto 0 auto;
+  color: var(--main);
+}
+
+.button:hover {
+  border-color: var(--buttonFover);
+  background-color: transparent;
+}

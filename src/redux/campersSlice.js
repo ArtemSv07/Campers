@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getCampers, getCampersById } from "./campersOps";
-// import { selectContactFilter } from "./filtersSlice";
 
 const handlePending = (state) => {
   state.error = null;
@@ -10,6 +9,7 @@ const handlePending = (state) => {
 const handleRejected = (state, action) => {
   state.loading = false;
   state.error = action.payload;
+  state.items = [];
 };
 
 const campersSlice = createSlice({
@@ -17,6 +17,7 @@ const campersSlice = createSlice({
   initialState: {
     items: [],
     selectItem: null,
+    totalItems: null,
     loading: false,
     error: null,
   },
@@ -25,7 +26,8 @@ const campersSlice = createSlice({
       .addCase(getCampers.pending, handlePending)
       .addCase(getCampers.fulfilled, (state, action) => {
         state.loading = false;
-        state.items = action.payload;
+        state.items = action.payload.items;
+        state.totalItems = action.payload.total;
       })
       .addCase(getCampers.rejected, handleRejected)
 
@@ -39,6 +41,3 @@ const campersSlice = createSlice({
 });
 
 export default campersSlice.reducer;
-
-// export const selectItems = (state) => state.campers.items;
-// export const selectItem = (state) => state.campers.selectItem;

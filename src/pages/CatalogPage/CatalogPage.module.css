@@ -1,0 +1,73 @@
+.section {
+  padding: 48px 0 52px 0;
+}
+
+.catalogBox {
+  display: flex;
+  position: relative;
+}
+.buttonHeart {
+  position: absolute;
+  top: -35px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+}
+
+.heartIcon {
+  position: absolute;
+  top: 0px;
+  right: 4px;
+  width: 27px;
+  height: 25px;
+  stroke-width: 1px;
+}
+
+.burgerButton {
+  position: absolute;
+  top: -35px;
+  left: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  border-radius: 4px;
+  width: 40px;
+  height: 23px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttonHeart {
+    top: -35px;
+    right: 32px;
+  }
+
+  .burgerButton {
+    top: -35px;
+    left: 32px;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .burgerButton {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .buttonHeart {
+    top: -97px;
+    right: 64px;
+  }
+}
+
+.heartIconActive {
+  stroke: var(--buttonFover);
+  fill: transparent;
+}
+
+.heartIconNotActive {
+  fill: var(--buttonFover);
+  stroke: var(--buttonFover);
+}

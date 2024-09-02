@@ -25,10 +25,10 @@
 
 .inputForm {
   padding: 18px;
-  max-width: 614px;
+  /* width: 614px; */
 }
 .CustomDateField {
-  max-width: 614px;
+  width: 256px;
 }
 
 .errMessage {
@@ -55,7 +55,7 @@
     padding: 44px 57px;
   }
   .CustomDateField {
-    width: 870px;
+    width: 844px;
   }
 }
 

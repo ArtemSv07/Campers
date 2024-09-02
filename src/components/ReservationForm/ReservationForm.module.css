@@ -25,7 +25,6 @@
 
 .inputForm {
   padding: 18px;
-  /* width: 614px; */
 }
 .CustomDateField {
   width: 256px;
@@ -36,6 +35,59 @@
   margin-top: 3px;
   display: block;
 }
+
+/* ////////////////////////////////// */
+@media screen and (min-width: 325px) {
+  .CustomDateField {
+    width: 262px;
+  }
+}
+@media screen and (min-width: 330px) {
+  .CustomDateField {
+    width: 266px;
+  }
+}
+@media screen and (min-width: 335px) {
+  .CustomDateField {
+    width: 271px;
+  }
+}
+@media screen and (min-width: 340px) {
+  .CustomDateField {
+    width: 276px;
+  }
+}
+@media screen and (min-width: 345px) {
+  .CustomDateField {
+    width: 281px;
+  }
+}
+@media screen and (min-width: 350px) {
+  .CustomDateField {
+    width: 286px;
+  }
+}
+@media screen and (min-width: 355px) {
+  .CustomDateField {
+    width: 291px;
+  }
+}
+@media screen and (min-width: 360px) {
+  .CustomDateField {
+    width: 296px;
+  }
+}
+@media screen and (min-width: 365px) {
+  .CustomDateField {
+    width: 301px;
+  }
+}
+@media screen and (min-width: 370px) {
+  .CustomDateField {
+    width: 306px;
+  }
+}
+/* /////////////////////////////// */
 
 @media screen and (min-width: 375px) {
   .CustomDateField {

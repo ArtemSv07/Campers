@@ -23,6 +23,7 @@ const CustomDateField = ({ field, form, placeholder }) => (
       form.validateField(field.name);
     }}
     placeholderText={placeholder}
+    wrapperClassName={css.datePickerWrapper}
   />
 );
 

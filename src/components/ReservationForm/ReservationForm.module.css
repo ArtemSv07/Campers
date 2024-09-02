@@ -36,58 +36,25 @@
   display: block;
 }
 
-/* ////////////////////////////////// */
-@media screen and (min-width: 325px) {
-  .CustomDateField {
-    width: 262px;
-  }
+.CustomDateField {
+  width: 100%;
 }
-@media screen and (min-width: 330px) {
-  .CustomDateField {
-    width: 266px;
-  }
+
+.datePickerWrapper {
+  width: 100%;
 }
-@media screen and (min-width: 335px) {
-  .CustomDateField {
-    width: 271px;
-  }
+
+.datePickerWrapper .react-datepicker__input-container {
+  width: 100%;
 }
-@media screen and (min-width: 340px) {
-  .CustomDateField {
-    width: 276px;
-  }
+
+.react-datepicker-wrapper {
+  width: 100%;
 }
-@media screen and (min-width: 345px) {
-  .CustomDateField {
-    width: 281px;
-  }
+
+.react-datepicker__input-container {
+  width: 100%;
 }
-@media screen and (min-width: 350px) {
-  .CustomDateField {
-    width: 286px;
-  }
-}
-@media screen and (min-width: 355px) {
-  .CustomDateField {
-    width: 291px;
-  }
-}
-@media screen and (min-width: 360px) {
-  .CustomDateField {
-    width: 296px;
-  }
-}
-@media screen and (min-width: 365px) {
-  .CustomDateField {
-    width: 301px;
-  }
-}
-@media screen and (min-width: 370px) {
-  .CustomDateField {
-    width: 306px;
-  }
-}
-/* /////////////////////////////// */
 
 @media screen and (min-width: 375px) {
   .CustomDateField {

@@ -1,11 +1,23 @@
 .bagroundImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("/src/img/404.png");
+  width: 320px;
+  height: 320px;
+  background-image: url(/src/img/404.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .bagroundImg {
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bagroundImg {
+    width: 100vh;
+    height: 100vh;
+  }
 }
